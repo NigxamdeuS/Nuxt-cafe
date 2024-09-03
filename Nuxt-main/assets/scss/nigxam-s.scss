@@ -1,0 +1,223 @@
+/* すべてのページに適応される設定 */
+html{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.logo{
+    text-align: center;
+    padding: 0 0;
+}
+p,li,td{
+    line-height: 1.7;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* すべてのページに適応    ヘッダー */
+.header {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+  
+    .logo img {
+      max-width: 100px;
+    }
+  
+    .nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        margin-left: 20px;
+  
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 16px;
+  
+          &:hover {
+            color: #ccc;
+          }
+        }
+      }
+    }
+  
+    // Responsive Design
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+  
+      .nav ul {
+        flex-direction: column;
+        width: 100%;
+  
+        li {
+          margin: 10px 0;
+          width: 100%;
+          text-align: center;
+  
+          a {
+            display: block;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 5px;
+  
+            &:hover {
+              background-color: #555;
+            }
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      padding: 10px;
+  
+      .logo img {
+        max-width: 80px;
+      }
+  
+      .nav ul li a {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+  }
+  
+
+/* すべてのページに適応    ヒーロー */
+.hero{
+    padding: 287px 0;
+}
+/*すべてのページに適応    メイン */
+
+.haba{
+    margin: 90px auto 90px auto;
+    margin-top: 0%;
+    max-width: 1000px;
+}
+
+/*すべてのページに適応    フッター */
+.footer {
+    background-color: #333;
+    color: #000000;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer-section h4 {
+    color: #8cc63f;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .footer-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+/*別ページ*/
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  .card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    flex: 1 1 calc(10.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    text-align: center;
+
+    .picture {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+      }
+    }
+
+    .description {
+      padding: 15px;
+      font-size: 18px;
+      color: #555;
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 1024px) {
+  #cards .card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  #cards .card {
+    flex: 1 1 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+  .logo-whale{
+    margin-top: 20px;
+  }
+
